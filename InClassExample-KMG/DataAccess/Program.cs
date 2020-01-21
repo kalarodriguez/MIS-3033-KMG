@@ -24,6 +24,18 @@ namespace DataAccess
             Console.WriteLine($"{num1.ToString("N2")} + {num2.ToString("N2")} = {addResult.ToString("N2")}");
             Console.WriteLine($"{num3.ToString("N2")} - {num4.ToString("N2")} = {subResult.ToString("N2")}");
 
+            double[] allTheNums = new double[5];
+            allTheNums[0] = 1;
+            allTheNums[1] = 4;
+            allTheNums[2] = 5;
+            allTheNums[3] = 10;
+            allTheNums[4] = 20;
+
+            addResult = Add(allTheNums);
+
+            Console.WriteLine(addResult);
+          
+
             Console.ReadKey();
 
         }
@@ -34,7 +46,32 @@ namespace DataAccess
             return sum;
         }
 
+        static double Add(double[] values)
+        {
+            double sum = 0;
+            int counter = 0;
 
+
+            //while (counter < values.Length)
+            //{
+            //    sum += values[counter];
+            //    counter++;
+            //}
+
+
+            //for (counter = 0; counter < values.Length; counter++)
+            //{
+            //    sum += values[counter];
+            //}
+
+
+            foreach (var item in values)
+            {
+                sum += item;                
+            }
+
+            return sum; 
+        }
 
         static double Subtract(double value1, double value2)
         {            
