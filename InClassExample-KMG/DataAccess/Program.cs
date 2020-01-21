@@ -21,5 +21,10 @@ namespace DataAccess
             var sum = value1 + value2;
             return sum;
         }
+
+        static double Subtract(double value1, double value2)
+        {            
+            return value1 - value2;
+        }
     }
 }
