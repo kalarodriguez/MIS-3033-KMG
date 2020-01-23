@@ -77,5 +77,10 @@ namespace DataAccess
         {            
             return value1 - value2;
         }
+
+        static void DatabaseStuff()
+        {
+
+        }
     }
 }
