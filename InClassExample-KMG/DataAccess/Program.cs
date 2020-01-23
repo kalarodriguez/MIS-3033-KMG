@@ -49,7 +49,8 @@ namespace DataAccess
         static double Add(double[] values)
         {
             double sum = 0;
-            int counter = 0;
+
+            //int counter = 0;
 
 
             //while (counter < values.Length)
