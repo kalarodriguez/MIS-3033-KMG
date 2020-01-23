@@ -15,7 +15,7 @@ namespace MIS_3013_Review_KMG
         public string firstName { get; set; }
         public string lastName { get; set; }
         public DateTime birthdate { get; set; }
-        private int luckyNumber { get; set; }
+        private int luckyNumber;
 
         public Student()
         {

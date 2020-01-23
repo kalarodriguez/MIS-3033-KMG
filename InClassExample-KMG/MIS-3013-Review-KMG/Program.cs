@@ -49,10 +49,65 @@ namespace MIS_3013_Review_KMG
 
             }
 
+            List<Student> studs = new List<Student>();
+
+            Student kala = new Student();
+            kala.firstName = "Kala";
+            kala.lastName = "Guthrie";
+            kala.ID = 1;
+            kala.birthdate = new DateTime(1994, 03, 30);
+
+            studs.Add(kala);
+
+            for (int i = 0; i < studentIDs.Length; i++)
+            {
+                Student s = new Student();
+                s.firstName = studentFirstNames[i];
+                s.lastName = studentLastNames[i];
+                s.ID = studentIDs[i];
+
+                studs.Add(s);
+            }
+
+
+
+            double allIDsSummedUp = 0;
+
+
+
+
+            foreach (var student in studs)
+            {
+                allIDsSummedUp += student.ID;
+                Console.WriteLine($"{student.lastName}, {student.firstName} ({student.ID}) - DOB: {student.birthdate.ToShortDateString()}");
+                bool isUpper = true;
+                string crazyFname = "";
+                foreach (var letter in student.firstName)
+                {
+                    if (isUpper == true)
+                    {
+                        crazyFname += letter.ToString().ToUpper();
+                        isUpper = false;
+                    }
+
+                    else
+                    {
+                        crazyFname += letter.ToString().ToLower();
+                        isUpper = true;
+                    }                    
+
+                }
+
+                Console.WriteLine($"Crazy first name is {crazyFname}");                
+
+            }
+
+            Console.WriteLine($"All IDs added together is {allIDsSummedUp}");
+
+
 
 
             Console.ReadKey();
-
         }
     }
 }
