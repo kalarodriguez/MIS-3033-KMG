@@ -29,6 +29,28 @@ namespace MIS_3013_Review_KMG
             }
 
 
+
+            //Dictionary Example - key/value pairs
+
+            Dictionary<int, string> students = new Dictionary<int, string>();
+            students.Add(1, "Jordan Guthrie");
+            students.Add(2, "Harvey Mallory");
+            students.Add(3, "William Johnson");
+
+
+            if (students.ContainsKey(1))
+            {
+                students[1] = "Jordan W. Guthrie";
+            }
+
+            foreach (var key in students.Keys)
+            {
+                Console.WriteLine($"{students[key]} ({key})");
+
+            }
+
+
+
             Console.ReadKey();
 
         }
