@@ -32,6 +32,11 @@ namespace RickandMorty
         public string species { get; set; }
         public string gender { get; set; }
         public string image { get; set; }
+        public override string ToString()
+        {
+           return $"({id}) {name}";
+          
+        }
 
     }
 }
