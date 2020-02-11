@@ -7,6 +7,10 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <ListBox x:Name="lstCharacter" HorizontalAlignment="Left" Height="294" VerticalAlignment="Top" Width="346" Margin="87,50,0,0"/>
+        <Label x:Name="lblTitle" Content="Rick and Morty Characters" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="313,19,0,0"/>
+        <Button x:Name="btn" Content="Button" RenderTransformOrigin="1,4.55" Margin="358,371,359,28"/>
+        <Image x:Name="imgCharacter" HorizontalAlignment="Left" Height="294" VerticalAlignment="Top" Width="288" Margin="464,50,0,0"/>
+
     </Grid>
 </Window>
