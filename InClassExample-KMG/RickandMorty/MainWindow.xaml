@@ -5,12 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:RickandMorty"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        <ListBox x:Name="lstCharacter" HorizontalAlignment="Left" Height="294" VerticalAlignment="Top" Width="346" Margin="87,50,0,0" SelectionChanged="lstCharacter_SelectionChanged"/>
+        Title="MainWindow" Height="567" Width="800">
+    <Grid Height="501" VerticalAlignment="Top">
+        <ListBox x:Name="lstCharacter" HorizontalAlignment="Left" Height="257" VerticalAlignment="Top" Width="332" Margin="87,50,0,0" SelectionChanged="lstCharacter_SelectionChanged"/>
         <Label x:Name="lblTitle" Content="Rick and Morty Characters" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="313,19,0,0"/>
-        <Button x:Name="btn" Content="Button" RenderTransformOrigin="1,4.55" Margin="358,363,330,22"/>
-        <Image x:Name="imgCharacter" HorizontalAlignment="Left" Height="294" VerticalAlignment="Top" Width="288" Margin="464,50,0,0"/>
+        <Button x:Name="btnDoSomething" Content="Do Something" RenderTransformOrigin="1,4.55" Margin="370,312,333,147" Click="btnDoSomething_Click"/>
+        <Image x:Name="imgCharacter" HorizontalAlignment="Left" Height="257" VerticalAlignment="Top" Width="269" Margin="483,50,0,0"/>
+        <WebBrowser x:Name="wbCharacterInfo" HorizontalAlignment="Left" Height="171" VerticalAlignment="Top" Width="782" Margin="0,360,0,-30"/>
 
     </Grid>
 </Window>

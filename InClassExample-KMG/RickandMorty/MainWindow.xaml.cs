@@ -54,5 +54,11 @@ namespace RickandMorty
             // find the image then create a bitmap for the image
             imgCharacter.Source = new BitmapImage(new System.Uri(selectedCharacter.image));
         }
+
+        private void btnDoSomething_Click(object sender, RoutedEventArgs e)
+        {
+            //ResultObj selectedCharacter = (ResultObj)lstCharacter.SelectedItems;
+            //wbCharacterInfo.Source = new System.Uri(selectedCharacter.image);
+        }
     }
 }
